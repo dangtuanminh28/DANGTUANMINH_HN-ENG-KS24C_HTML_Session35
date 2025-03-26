@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./ex2.css">
+    <link rel="stylesheet" href="b2.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>ADD BOOKMARK</h1>
-        
-        <button id="add-btn">Add Bookmark</button>
-        
-        <div class="add-bookmark" id="bookmark-form" style="display: none;">
-          <h2>Add Bookmark</h2>
-          <input type="text" id="website-name" placeholder="Website Name">
-          <input type="url" id="website-url" placeholder="Website URL">
-          <button id="save-btn">Save</button>
+    <div id="container">
+        <button id="add">ADD BOOKMARK</button>
+        <section id="section">
+
+        </section>
+    </div>
+    <header id="header">
+        <div>
+            <p>Add Bookmark</p>
+            <button id="hidden">X</button>
         </div>
-        
-        <div id="bookmarks-container"></div>
-      </div>
-      
-    <script src="./ex2.js"></script>
+        <p>Website Name</p>
+        <input type="text" id="inputName">
+        <p>Website URL</p>
+        <input type="text" id="inputURL"> <br>
+        <button id="save">Save</button>
+    </header>
+    <script src="./b2.js"></script>
 </body>
+
 </html>

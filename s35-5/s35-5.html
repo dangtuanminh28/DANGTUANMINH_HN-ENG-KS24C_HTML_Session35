@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Danh sách danh mục</h2>
+        <button id="addCategoryBtn">Thêm mới danh mục</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên danh mục</th>
+                    <th>Trạng thái</th>
+                    <th>Chức năng</th>
+                </tr>
+            </thead>
+            <tbody id="categoryList"></tbody>
+        </table>
+
+        <div id="categoryModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Thêm mới danh mục</h3>
+                <form id="categoryForm">
+                    <label for="categoryId">ID danh mục:</label>
+                    <input type="text" id="categoryId" placeholder="Nhập ID" required>
+
+                    <label for="categoryName">Tên danh mục:</label>
+                    <input type="text" id="categoryName" placeholder="Nhập tên danh mục" required>
+
+                    <label>Trạng thái:</label>
+                    <input type="radio" id="active" name="status" value="active" checked>
+                    <label for="active">Đang hoạt động</label>
+                    <input type="radio" id="inactive" name="status" value="inactive">
+                    <label for="inactive">Ngừng hoạt động</label>
+
+                    <button type="submit">Thêm</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="./main5.js"></script>
+</body>
+
+</html>
